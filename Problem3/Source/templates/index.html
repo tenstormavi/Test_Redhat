@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html style="background-color: #CCCCCC">
+<head>
+	<title>Welcome Page</title>
+</head>
+<body>
+    <h1 style="background-color:blue;color:white;text-align: center">Welcome!!! {{user}}</h1>
+    <h2 style="text-align: center;">Click Below to know more about me.</h2>
+    <div style="text-align:center;">
+        <form action="/aboutme/" method="post">{% csrf_token %}
+            <input type="submit" value="About Me"/>
+        </form>
+    </div>
+</body>
+</html>

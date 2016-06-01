@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html style="background-color: #CCCCCC">
+<head>
+	<title>Homepage</title>
+</head>
+<body>
+    <h1 style="background-color:blue;color:white;text-align: center">Welcome</h1>
+    <div style="text-align:center;">
+    <form action="/home/" method="post" name="myForm">{% csrf_token %}
+	    <input type="text" name="name" placeholder="Enter Your Name"/>
+	    <input type="submit" />
+    </form>
+    </div>
+</body>
+</html>
